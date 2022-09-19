@@ -1,0 +1,121 @@
+@media (max-width: 500px) {
+    .container {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 20px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "brand brand brand brand brand brand"
+        "global-nav global-nav global-nav global-nav tools tools"
+        "hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action"
+        "article-feature article-feature article-feature article-feature article-feature article-feature"
+        "ad ad ad ad ad ad"
+        "article-listing article-listing article-listing article-listing article-listing article-listing"
+        "footer footer footer footer footer footer";
+        padding: 20px;
+        .item {
+            height: 50px;
+            background-color: rgb(0, 51, 51);
+            color: white;
+        }
+        .brand {
+            grid-area: brand;
+            p {
+                letter-spacing: 5px;
+                font-size: 5vw; 
+                transform: translate(0%, 15%);
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+        .global-nav {
+            grid-area: global-nav;
+            ul {
+                margin: 0px;
+                padding: 0px;
+                padding-top: 10px;
+                padding-left: 3px;
+                li {
+                    a {
+                        font-size: 1.8vw;
+                        letter-spacing: 0px;
+                        padding: 8px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        .tools {
+            grid-area: tools;
+        }
+        .hero-feature {
+            grid-area: hero-feature;
+            display: none;
+        }
+        .hero-call-to-action {
+            grid-area: hero-call-to-action;
+            height: 50px;
+            a {
+                font-size: 3.5vw;
+            }
+            .btn-buy {
+                width: 84.5vw;
+                height: 4.5vh;
+                transform: translate(-0.1%, 0%);
+            }
+        }
+        .ad {
+            grid-area: ad;
+            height: 80px;
+            .image {
+                width: 89vw;
+                height: 13vh;
+            }
+            .image-text {
+                transform: translate(30%, -300%);
+                font-size: 20px;
+                letter-spacing: 3px;
+                text-align: center;
+            }
+        }
+        .article-feature {
+            grid-area: article-feature;
+            height: 80px;
+            iframe {
+                height: 12.2vh;
+                width: 89vw;
+                transform: translate(-0.7%, -1%);
+            }
+        }
+        .article-listing {
+            grid-area: article-listing;
+            height: 150px;
+            ul {
+                li {
+                    p {
+                        font-size: 1.5vw;
+                        letter-spacing: 1.5px;
+                        padding: 0px;
+                        line-height: 0px;
+                        margin: 0px;
+                    }
+                    a {
+                        padding: 0px;
+                        font-size: 1vw;
+                        line-height: 0px;
+                    }
+                }
+            }
+        }
+        .sidebar-feature {
+            grid-area: sidebar-feature;
+            display: none;
+        }
+        .footer {
+            grid-area: footer;
+            p {
+                padding: 0px;
+            }
+        } 
+    }
+}

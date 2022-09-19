@@ -1,0 +1,486 @@
+html, body {
+  font-family: "Noto Sans Display";
+  background-color: rgb(221, 254, 243);
+}
+
+.container {
+  display: grid;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 30px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "brand brand global-nav global-nav global-nav global-nav global-nav global-nav global-nav tools tools tools" "hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-call-to-action hero-call-to-action hero-call-to-action ad ad ad" "article-feature article-feature article-feature article-listing article-listing article-listing article-listing article-listing article-listing sidebar-feature sidebar-feature sidebar-feature" "footer footer footer footer footer footer footer footer footer footer footer footer";
+  padding: 20px;
+}
+.container .item {
+  height: 100px;
+  background-color: rgb(0, 51, 51);
+  color: white;
+  border-radius: 8px;
+}
+.container .brand {
+  grid-area: brand;
+}
+.container .global-nav {
+  grid-area: global-nav;
+}
+.container .tools {
+  grid-area: tools;
+}
+.container .hero-feature {
+  grid-area: hero-feature;
+  height: 150px;
+}
+.container .hero-call-to-action {
+  grid-area: hero-call-to-action;
+  height: 150px;
+}
+.container .ad {
+  grid-area: ad;
+  height: 150px;
+}
+.container .article-feature {
+  grid-area: article-feature;
+  height: 300px;
+}
+.container .article-listing {
+  grid-area: article-listing;
+  height: 300px;
+}
+.container .sidebar-feature {
+  grid-area: sidebar-feature;
+  height: 300px;
+}
+.container .footer {
+  grid-area: footer;
+}
+
+.brand {
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.brand p {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 2.5vw;
+  color: rgb(221, 254, 243);
+  text-shadow: 5px 5px 2px rgb(6, 16, 16);
+  margin: 20px;
+}
+
+.global-nav {
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.global-nav ul {
+  list-style-type: none;
+  padding: 15px;
+}
+.global-nav ul li {
+  display: inline;
+}
+.global-nav ul li a {
+  text-decoration: none;
+  color: greenyellow;
+  font-size: 1.5vw;
+  letter-spacing: 5px;
+  padding: 28px;
+}
+.global-nav ul li .btn {
+  transition: color 0.34s ease-in;
+}
+.global-nav ul li .btn:hover {
+  color: rgb(221, 254, 243);
+}
+
+.tools p {
+  color: rgb(221, 254, 243);
+  text-align: center;
+}
+
+.hero-feature p {
+  font-size: 2vw;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 40px;
+  color: rgb(221, 254, 243);
+}
+.hero-feature p .strong {
+  letter-spacing: 10px;
+  font-size: 2.5vw;
+}
+
+.hero-call-to-action {
+  padding: 0px;
+  margin: 0px;
+}
+.hero-call-to-action a {
+  display: block;
+  text-decoration: none;
+  color: rgb(221, 254, 243);
+  font-size: 1.5vw;
+}
+.hero-call-to-action .btn-buy {
+  border: 1px solid rgb(53, 154, 120);
+  background-color: rgb(53, 154, 120);
+  border-radius: 5px;
+  padding: 10px;
+  width: 10vw;
+  text-align: center;
+  transition: background-color 0.34s ease-in, color 0.34s ease-in;
+  transform: translate(50%, 80%);
+}
+.hero-call-to-action .btn-buy:hover {
+  background-color: rgb(221, 254, 243);
+  color: rgb(0, 51, 51);
+}
+
+.ad .image {
+  width: 23.4vw;
+  height: 21vh;
+  border-radius: 8px;
+}
+.ad .image-text {
+  color: rgb(221, 254, 243);
+  position: absolute;
+  transform: translate(13%, -430%);
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.article-feature iframe {
+  border-radius: 8px;
+  width: 23vw;
+  height: 41vh;
+}
+
+.article-listing ul {
+  list-style-type: circle;
+}
+.article-listing ul li {
+  text-align: left;
+}
+.article-listing ul li p {
+  text-decoration: none;
+  color: rgb(221, 254, 243);
+  font-size: 1vw;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+.article-listing ul li a {
+  color: rgb(53, 154, 120);
+  padding: 0px;
+}
+
+.sidebar-feature h3 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+.sidebar-feature h3 span {
+  color: greenyellow;
+}
+.sidebar-feature p {
+  text-align: justify;
+  font-size: 1vw;
+  padding: 10px;
+}
+.sidebar-feature a {
+  color: rgb(53, 154, 120);
+  padding: 10px;
+}
+
+.footer p {
+  text-align: center;
+  padding: 20px;
+  color: rgb(53, 154, 120);
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "brand brand global-nav global-nav global-nav global-nav global-nav global-nav global-nav tools tools tools" "hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-call-to-action hero-call-to-action hero-call-to-action ad ad ad" "article-feature article-feature article-feature article-listing article-listing article-listing article-listing article-listing article-listing sidebar-feature sidebar-feature sidebar-feature" "footer footer footer footer footer footer footer footer footer footer footer footer";
+    padding: 20px;
+  }
+  .container .item {
+    height: 100px;
+    background-color: rgb(0, 51, 51);
+    color: white;
+  }
+  .container .brand {
+    grid-area: brand;
+  }
+  .container .global-nav {
+    grid-area: global-nav;
+  }
+  .container .tools {
+    grid-area: tools;
+  }
+  .container .hero-feature {
+    grid-area: hero-feature;
+    height: 150px;
+  }
+  .container .hero-call-to-action {
+    grid-area: hero-call-to-action;
+    height: 150px;
+  }
+  .container .ad {
+    grid-area: ad;
+    height: 150px;
+  }
+  .container .article-feature {
+    grid-area: article-feature;
+    height: 300px;
+  }
+  .container .article-listing {
+    grid-area: article-listing;
+    height: 300px;
+  }
+  .container .sidebar-feature {
+    grid-area: sidebar-feature;
+    height: 300px;
+  }
+  .container .footer {
+    grid-area: footer;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    display: grid;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "brand brand global-nav global-nav global-nav global-nav global-nav global-nav global-nav tools tools tools" "hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature hero-feature" "hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action" "article-feature article-feature article-feature article-feature article-feature article-feature article-feature article-feature article-feature ad ad ad" "article-listing article-listing article-listing article-listing article-listing article-listing article-listing article-listing article-listing article-listing article-listing article-listing" "sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature sidebar-feature" "footer footer footer footer footer footer footer footer footer footer footer footer";
+    padding: 20px;
+  }
+  .container .item {
+    height: 100px;
+    background-color: rgb(0, 51, 51);
+    color: white;
+  }
+  .container .brand {
+    grid-area: brand;
+  }
+  .container .brand p {
+    font-size: 1.8vw;
+    padding: 0px;
+    text-align: center;
+    transform: translate(-9%, 60%);
+  }
+  .container .global-nav {
+    grid-area: global-nav;
+  }
+  .container .global-nav ul li a {
+    font-size: 2vw;
+    letter-spacing: 0px;
+    padding: 11px;
+    letter-spacing: 2px;
+  }
+  .container .tools {
+    grid-area: tools;
+  }
+  .container .tools p {
+    font-size: 1.3vw;
+    padding: 5px;
+  }
+  .container .hero-feature {
+    grid-area: hero-feature;
+    height: 60px;
+  }
+  .container .hero-feature p {
+    font-size: 2.1vw;
+    letter-spacing: 3px;
+    line-height: 0px;
+    padding: 5px;
+  }
+  .container .hero-feature p .strong {
+    letter-spacing: 10px;
+    font-size: 2.5vw;
+  }
+  .container .hero-call-to-action {
+    grid-area: hero-call-to-action;
+    height: 50px;
+  }
+  .container .hero-call-to-action a {
+    font-size: 2vw;
+  }
+  .container .hero-call-to-action .btn-buy {
+    transform: translate(0%, 0%);
+    width: 91.3vw;
+    height: 4.5vh;
+  }
+  .container .ad {
+    grid-area: ad;
+    height: 150px;
+  }
+  .container .ad .image {
+    width: 22.4vw;
+    height: 23.5vh;
+  }
+  .container .ad .image-text {
+    transform: translate(-6%, -240%);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .container .article-feature {
+    grid-area: article-feature;
+    height: 150px;
+  }
+  .container .article-feature iframe {
+    height: 23.3vh;
+    transform: translate(-0.2%, -1%);
+    width: 70vw;
+  }
+  .container .article-listing {
+    grid-area: article-listing;
+    height: 300px;
+  }
+  .container .article-listing ul li p {
+    font-size: 2vw;
+    letter-spacing: 1.5px;
+  }
+  .container .article-listing ul li a {
+    padding: 0px;
+  }
+  .container .sidebar-feature {
+    grid-area: sidebar-feature;
+    height: 150px;
+  }
+  .container .sidebar-feature h3 {
+    letter-spacing: 3px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 2vw;
+  }
+  .container .sidebar-feature p {
+    font-size: 1.5vw;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    line-height: 18px;
+  }
+  .container .sidebar-feature a {
+    padding: 10px;
+    font-size: 1.5vw;
+  }
+  .container .footer {
+    grid-area: footer;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "brand brand brand brand brand brand" "global-nav global-nav global-nav global-nav tools tools" "hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action hero-call-to-action" "article-feature article-feature article-feature article-feature article-feature article-feature" "ad ad ad ad ad ad" "article-listing article-listing article-listing article-listing article-listing article-listing" "footer footer footer footer footer footer";
+    padding: 20px;
+  }
+  .container .item {
+    height: 50px;
+    background-color: rgb(0, 51, 51);
+    color: white;
+  }
+  .container .brand {
+    grid-area: brand;
+  }
+  .container .brand p {
+    letter-spacing: 5px;
+    font-size: 5vw;
+    transform: translate(0%, 15%);
+    padding: 0px;
+    margin: 0px;
+  }
+  .container .global-nav {
+    grid-area: global-nav;
+  }
+  .container .global-nav ul {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-left: 3px;
+  }
+  .container .global-nav ul li a {
+    font-size: 1.8vw;
+    letter-spacing: 0px;
+    padding: 8px;
+    letter-spacing: 2px;
+  }
+  .container .tools {
+    grid-area: tools;
+  }
+  .container .hero-feature {
+    grid-area: hero-feature;
+    display: none;
+  }
+  .container .hero-call-to-action {
+    grid-area: hero-call-to-action;
+    height: 50px;
+  }
+  .container .hero-call-to-action a {
+    font-size: 3.5vw;
+  }
+  .container .hero-call-to-action .btn-buy {
+    width: 84.5vw;
+    height: 4.5vh;
+    transform: translate(-0.1%, 0%);
+  }
+  .container .ad {
+    grid-area: ad;
+    height: 80px;
+  }
+  .container .ad .image {
+    width: 89vw;
+    height: 13vh;
+  }
+  .container .ad .image-text {
+    transform: translate(30%, -300%);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .container .article-feature {
+    grid-area: article-feature;
+    height: 80px;
+  }
+  .container .article-feature iframe {
+    height: 12.2vh;
+    width: 89vw;
+    transform: translate(-0.7%, -1%);
+  }
+  .container .article-listing {
+    grid-area: article-listing;
+    height: 150px;
+  }
+  .container .article-listing ul li p {
+    font-size: 1.5vw;
+    letter-spacing: 1.5px;
+    padding: 0px;
+    line-height: 0px;
+    margin: 0px;
+  }
+  .container .article-listing ul li a {
+    padding: 0px;
+    font-size: 1vw;
+    line-height: 0px;
+  }
+  .container .sidebar-feature {
+    grid-area: sidebar-feature;
+    display: none;
+  }
+  .container .footer {
+    grid-area: footer;
+  }
+  .container .footer p {
+    padding: 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
