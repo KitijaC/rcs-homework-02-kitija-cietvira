@@ -24,7 +24,7 @@
                 font-size: 1.8vw;
                 padding: 0px;
                 text-align: center;
-                transform: translate(-9%, 60%);
+                transform: translate(-16%, 75%);
             }
         }
         .global-nav {
@@ -32,10 +32,10 @@
             ul {
                 li {
                     a {
-                        font-size: 2vw;
+                        font-size: 1.9vw;
                         letter-spacing: 0px;
                         padding: 11px;
-                        letter-spacing: 2px;
+                        letter-spacing: 1.5px;
                     }
                 }
             }
@@ -69,7 +69,7 @@
             }
             .btn-buy {
                 transform: translate(0%, 0%);
-                width: 91.3vw;
+                width: 88.3vw;
                 height: 4.5vh;
             }
         }
@@ -77,8 +77,8 @@
             grid-area: ad;
             height: 150px;
             .image {
-                width: 22.4vw;
-                height: 23.5vh;
+                width: 21.8vw;
+                height: 22vh;
             }
             .image-text {
                 transform: translate(-6%, -240%);
@@ -91,9 +91,9 @@
             grid-area: article-feature;
             height: 150px;
             iframe {
-                height: 23.3vh;
+                height: 22vh;
                 transform: translate(-0.2%, -1%);
-                width: 70vw;
+                width: 67.7vw;
             }
         }
         .article-listing {
